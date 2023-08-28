@@ -48,37 +48,10 @@ controller with FIFOs and burst support
 bit timers up to 180 MHz, each with up to 4 
 IC/OC/PWM or pulse counter and quadrature 
 (incremental) encoder input
-![WhatsApp Image 2023-07-20 at 21 34 34](https://github.com/vasanza/STM32/assets/12642226/403a2232-6ea6-4c9a-b0f1-54bdc53203a7)
 
-# Development Plan
-## Day1
-- Recursos Iniciales
-- IDE: STM32CubeIDE 1.11.2
-## UART Comunication
-- Example # 1 UART
-- Detail:
---UART1 TX PA9
---UART1 RX PA10
-- Process
--- Clock Source: AHB1, APB1
--- GPIOEN, AF7, UARTEN
-## GPIO
-- Example # 2 GPIO
-- Detail:
---Led blink PA5
-- Process
--- Clock Source: AHB1
--- GPIOEN, MODER, ODR
-## ADC
-- Example # 8 ADC
-- Detail: Use of ADC register for digitalization acquisition of analog signals.
-- Development board: STM32F446RE
-- Processor: Arm® Cortex®-M4 32-bit--ADC PA2
-- Link: https://github.com/vasanza/STM32/tree/main/8_adc_nucleo_cgpt
-## Timer
-- Example # 4 Timer
-- Detail:
---Timer Registers
-- Process
--- Clock Source: AHB1
--- GPIOEN, MODER, ODR
+# Block Diagram
+![image](https://github.com/jariver1986/STM32F429XX_advanced_Arm_based_32_bit_MCUs/assets/62295761/82679bcb-bad8-4e4b-a370-9396bc158325)
+
+
+# IDE
+- STM32CubeIDE 1.11.2
