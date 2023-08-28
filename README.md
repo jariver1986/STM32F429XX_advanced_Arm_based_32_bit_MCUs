@@ -3,7 +3,7 @@
 
 - Model: Discovery kit with STM32F429ZI MCU
 - Link: https://www.st.com/en/evaluation-tools/32f429idiscovery.html
-- 
+
 # Features
 - Core: Arm® 32-bit Cortex®-M4 CPU with FPU, 
 Adaptive real-time accelerator (ART 
