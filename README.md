@@ -5,13 +5,13 @@
 - Link: https://www.st.com/en/evaluation-tools/nucleo-f446re.html
 
 # Features
--Core: Arm® 32-bit Cortex®-M4 CPU with FPU, 
+- Core: Arm® 32-bit Cortex®-M4 CPU with FPU, 
 Adaptive real-time accelerator (ART 
 Accelerator™) allowing 0-wait state execution 
 from Flash memory, frequency up to 180 MHz, 
 MPU, 225 DMIPS/1.25 DMIPS/MHz
 (Dhrystone 2.1), and DSP instructions
--Memories
+- Memories
 – Up to 2 MB of Flash memory organized into 
 two banks allowing read-while-write
 – Up to 256+4 KB of SRAM including 64-KB 
