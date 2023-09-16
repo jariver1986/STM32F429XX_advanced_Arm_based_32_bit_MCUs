@@ -14,41 +14,44 @@
 ![image](https://github.com/jariver1986/STM32F429XX_advanced_Arm_based_32_bit_MCUs/assets/62295761/e481d363-7d3c-4233-b5a8-427262f23545)
 
 
-## Práctica SDIO
-SDIO Overview:
-SDIO, which stands for Secure Digital Input/Output, is a communication interface used to transfer data between a microcontroller and SD memory cards. It is an extension of the standard SD card interface, allowing for both data input and output. SDIO cards are commonly used in applications like digital cameras, GPS receivers, and microcontroller-based systems.
+## Práctica I2C
+**I2C (Inter-Integrated Circuit) and STM32**
 
-STM32 Microcontrollers:
-STM32 microcontrollers are a family of 32-bit ARM Cortex-M based microcontrollers developed by STMicroelectronics. They are widely used in various embedded applications due to their flexibility, performance, and rich set of peripherals. STM32 microcontrollers support various communication interfaces including UART, SPI, I2C, and SDIO.
+**I2C Overview:**
+I2C, or Inter-Integrated Circuit, is a widely used synchronous serial communication protocol that enables data transfer between microcontrollers and peripheral devices. It's known for its simplicity and efficiency, making it suitable for various embedded applications. I2C uses a master-slave architecture, where a master device initiates communication with one or more slave devices over a two-wire bus (SCL for the clock signal and SDA for the data signal).
 
-Using SDIO with STM32:
-To use SDIO with an STM32 microcontroller, you'll need to follow these steps:
+**STM32 Microcontrollers:**
+STM32 microcontrollers, developed by STMicroelectronics, are a popular family of 32-bit ARM Cortex-M based microcontrollers. They offer a wide range of peripherals, including I2C interfaces, making them suitable for applications that require I2C communication.
 
-Hardware Configuration:
+**Using I2C with STM32:**
+To use I2C with an STM32 microcontroller, follow these steps:
 
-Connect the SDIO pins (D0-D3, CLK, CMD) of the SD card to the corresponding pins on the STM32 microcontroller.
-Ensure the SDIO pins are properly configured as alternate function mode.
-Software Initialization:
+1. **Hardware Configuration:**
+   - Connect the SCL and SDA pins of the STM32 microcontroller to the corresponding pins on the I2C peripheral or external I2C devices.
+   - Ensure appropriate pull-up resistors are connected to both SCL and SDA lines.
 
-Enable the clock for SDIO peripheral and associated GPIO ports.
-Configure the SDIO pins and set them as alternate function for SDIO communication.
-Set up the clock and bus width for SDIO communication.
-Sending Commands:
+2. **Software Initialization:**
+   - Enable the clock for the I2C peripheral you intend to use.
+   - Configure the I2C pins and set them as alternate function mode for I2C communication.
+   - Set the clock speed and addressing mode for the I2C bus.
 
-Use the SDIO_SendCommand() function to send commands to the SD card. This function sets up the command register and waits for the command to complete.
-Reading and Writing Data:
+3. **Writing Data:**
+   - To send data from the STM32 to an I2C device, use the I2C_Write() function. This function prepares and sends data to the target device.
 
-For reading data, use the SDIO_ReadBlock() function. This function sends a read command to the SD card, waits for the data transfer to complete, and reads data from the SDIO FIFO.
-For writing data, use the SDIO_WriteBlock() function. This function sends a write command to the SD card, waits for the data transfer to complete, and writes data to the SDIO FIFO.
-Error Handling (Optional):
+4. **Reading Data:**
+   - To receive data from an I2C device, use the I2C_Read() function. This function initiates a read operation and retrieves data from the target device.
 
-Implement error handling mechanisms to handle potential issues during SDIO communication, such as timeouts or CRC errors.
-Interrupt Handling (Optional):
+5. **Error Handling (Optional):**
+   - Implement error handling mechanisms to manage potential issues during I2C communication, such as bus collisions, arbitration loss, or communication timeouts.
 
-If needed, set up and handle interrupts for SDIO events like data transfer complete or command complete.
-Testing and Debugging:
+6. **Interrupt Handling (Optional):**
+   - If necessary, set up and handle interrupts for I2C events like data reception complete, transmission complete, or error conditions.
 
-Test the SDIO communication thoroughly and use debugging tools like breakpoints, UART output, or LED indicators to diagnose any issues.
+7. **Testing and Debugging:**
+   - Test your I2C communication thoroughly, and use debugging tools like logic analyzers or serial output to diagnose and resolve any communication problems.
+
+8. **Advanced Features (Optional):**
+   - STM32 microcontrollers offer advanced features like multi-master support, DMA (Direct Memory Access) for data transfer, and clock stretching management, which can be utilized as needed.
 
 ## Steps
 ## Seleccion de la tarjeta de desarrollo STM32F446RE
@@ -57,7 +60,6 @@ Test the SDIO communication thoroughly and use debugging tools like breakpoints,
 ## Incorporar las achivos .h de los devices y los drivers
 ![uart4](https://github.com/vasanza/STM32/assets/12642226/61b44ee5-37c9-46fd-9eb7-1eba41dea17b)
 ## Escribir el codigo a utilizar
-![image](https://github.com/jariver1986/STM32F429XX_advanced_Arm_based_32_bit_MCUs/assets/62295761/a4030e2a-d96d-483d-84f2-7fe1717a5c31)
 
 
 
