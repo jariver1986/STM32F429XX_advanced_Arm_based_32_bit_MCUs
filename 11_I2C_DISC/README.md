@@ -1,4 +1,4 @@
-# ⭐⭐⭐⭐⭐ (Arm Cortex-M4) SDIO
+# ⭐⭐⭐⭐⭐ (Arm Cortex-M4) I2C
 ## ✅ Developed by: [John Rivera Burgos](https://www.linkedin.com/in/john-rivera-burgos-bb703079/)
 ## ➡️ Device:
 - Development Board: [NUCLEO-F446RE](https://www.st.com/en/evaluation-tools/nucleo-f446re.html)
