@@ -59,7 +59,7 @@ To use I2C with an STM32 microcontroller, follow these steps:
 ![uart3](https://github.com/vasanza/STM32/assets/12642226/7884bf80-70e2-4a80-9320-936fa2ab9de8)
 ## Incorporar las achivos .h de los devices y los drivers
 ![uart4](https://github.com/vasanza/STM32/assets/12642226/61b44ee5-37c9-46fd-9eb7-1eba41dea17b)
-## Escribir el codigo a utilizar
+
 
 
 
