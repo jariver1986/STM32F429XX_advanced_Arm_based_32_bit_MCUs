@@ -1,0 +1,6 @@
+../Src/SSPI.c:17:6:sspi_gpio_init	4	static
+../Src/SSPI.c:61:6:sspil_config	4	static
+../Src/SSPI.c:98:6:sspil_transmit	24	static
+../Src/SSPI.c:128:6:sspil_receive	16	static
+../Src/SSPI.c:144:6:spi_cs_enable	4	static
+../Src/SSPI.c:148:6:spi_cs_disable	4	static
